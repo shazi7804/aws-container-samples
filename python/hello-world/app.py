@@ -1,11 +1,12 @@
 from flask import Flask
+import socket
 import os
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Flask inside Container!!"
+    return "Running flask inside Container Id: " + socket.gethostname()
 
 
 if __name__ == "__main__":
