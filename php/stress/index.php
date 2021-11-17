@@ -1,1 +1,1 @@
-<?php echo gethostname(); ?>
+<?php echo "Running Container: ", gethostname(); ?>
