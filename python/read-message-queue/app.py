@@ -2,7 +2,7 @@ import boto3
 
 sqs = boto3.client('sqs')
 
-queue_url = 'https://sqs.eu-central-1.amazonaws.com/'
+queue_url = 'https://sqs.us-east-1.amazonaws.com/381354187112/EcsScalingBySqsStack-queue276F7297-DQMDJ9OYL896'
 
 def read_sqs():
     print(f"We will try to read {queue_url}")
